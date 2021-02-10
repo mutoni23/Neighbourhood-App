@@ -22,19 +22,19 @@ Neighbourhood is an app  that allows a user to create account and be able to add
 # Installations
 - Django
 - databases
-- 
-- 
+- gunicorn
+- Pillow
+- psycopg2
+- django bootstrap4
 
 
-
-
- ## Technology used:
-
+ # contact details
+- Email-adress : mutoniv5@gmail.com
+ 
+ # License
+- - vivine (c)2021
  
 
 
- 
 
 
-
-# Neighbourhood-App
