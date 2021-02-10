@@ -14,7 +14,6 @@ class SignupForm(UserCreationForm):
 
 
 class NewProfileForm(forms.ModelForm):
-    
     class Meta:
         model= Profile
         
