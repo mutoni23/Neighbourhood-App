@@ -5,10 +5,12 @@ Neighbourhood is an app  that allows a user to create account and be able to add
 # User Stories/ Parameters
 - Sign in with the application to start using/creating account.
 - Being able to search for village or hood
-- 
-- 
-- 
-- 
+- A user is able to create or add neighbourhood 
+- A user is able to add businesses happening in that neighborhood
+- A user is able to find Contact Information for the health department and Police authorities near my neighborhood.
+
+
+
 
 
 
