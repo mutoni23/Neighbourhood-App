@@ -20,6 +20,7 @@ class NewProfileForm(forms.ModelForm):
         exclude =['user']
 
 class NewHoodForm(forms.ModelForm):
+    
     class Meta:
         model= Neighbourhood
         # fields = ['name','description','location','police_contact','hospital_contact']
