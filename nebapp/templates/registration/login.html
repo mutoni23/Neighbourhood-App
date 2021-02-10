@@ -17,6 +17,7 @@
         <div class="panel-body">
 
           <form  action="/accounts/login/" method="post">
+            
             {% csrf_token %}
             {% bootstrap_form form%}
 
