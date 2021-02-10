@@ -10,12 +10,16 @@ Neighbourhood is an app  that allows a user to create account and be able to add
 - A user is able to find Contact Information for the health department and Police authorities near my neighborhood.
 
 
+# Prerequisites
 
+- Git
+- Python: 3.6 .12 versions
+- Django: 1.11 or greater version
+- Have Internet connection
+- Chrome Browse
+- Gunicorn
 
-
-
-
-
+# Installations
 
 
 
