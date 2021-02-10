@@ -20,7 +20,10 @@ Neighbourhood is an app  that allows a user to create account and be able to add
 - Gunicorn
 
 # Installations
-
+- Django
+- databases
+- 
+- 
 
 
 
