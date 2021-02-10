@@ -1,0 +1,71 @@
+{%extends "users/base.html"%}
+{% load static%}
+{% load bootstrap4 %} 
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Lilita+One|Titan+One" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css">
+    
+    <title>Neighbourhood watch</title>
+</head>
+<body>
+
+        {% block content %}
+        <br><br><br>
+        <div class="container" style="background-color: gray; color: white;">
+        <div class="jumbotron" style="background-image:url('https://images.unsplash.com/photo-1565532361468-c7e41f852390?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80');background-size: cover; height: 93vh; background-position: center;margin-top: -4px"></div>   
+            <h1>  neighbourhood watch!</h1>
+            <h6 style="text-align:center;">{{date|date:"l d F Y"}}</h6>
+
+            <h5></h5>
+
+            <a href="{% url 'new-hood'%}">
+                <button class="btn btn-outline-success btn-sm">Create a hood</button>
+            </a>
+            <div class="row">
+            {%for hood in hoods %}
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-header" style="color: gray;">
+                        <h3>{{hood.name}}</h3>
+                    </div>
+                    <div class="card-image">
+                            <img src="{{hood.image.url}}" class="img-responsive" alt="" style="width: 300px; height: 250px;">
+                    </div>
+
+                    <div class="card-body" style="color: gray;">
+                        <h4 class="description">Detail: {{hood.description}}</h4>
+                        <h4 class="description">Residents: {{hood.population}}</h4>  
+                        <h4 class="description">Police contact: {{hood.police_contact}}</h4>
+                        <h4 class="description">Health facility: {{hood.hospital_contact}}</h4>
+                           
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="{%url 'my-hood' hood.id%}"><button class="btn btn-outline-success btn-sm">View Hood</a>
+
+                    
+
+
+                    </div>
+                </div>
+            </div>   
+            {%endfor%}
+          </div>
+            
+
+        </div><hr>
+
+
+        {% endblock %}
+    
+    </body>
+    </html>      
+
+
+
